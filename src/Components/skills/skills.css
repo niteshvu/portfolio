@@ -1,0 +1,144 @@
+.skillsContainer{
+    width: 100%;
+    height: 100%;
+    /* background-color: gray; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imageContainer{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    /* border: 1px solid black; */
+    height: 60%;
+    margin: 40px;
+}
+.innerImageContainer{
+    width: 33.3%;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+    overflow: hidden;
+}
+.innerImageContainer:hover{
+    overflow: hidden;
+}
+.tools{
+    transform-origin: 0% 50%;
+}
+.design{
+    transform-origin: 100% 50%;
+}
+
+.code:hover{
+    animation-name: codeZoom;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+}
+.tools:hover{
+    animation-name: toolsZoom;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+    /* margin-right: 60px; */
+}
+.design:hover{
+    animation-name: designZoom;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+    /* margin-left: 60px; */
+}
+@keyframes codeZoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5, 1.2);
+    }
+}
+@keyframes toolsZoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5, 1.2);
+    }
+}
+@keyframes designZoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5, 1.2);
+    }
+}
+.mainInfoContainer{
+    width: 100%;
+    height: 90%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 13px;
+    text-align: center;
+}
+.moreInfoButtonContainer{
+    width: 100%;
+    height: 10%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.moreInfo{
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: gray; */
+    padding: 15px;
+}
+
+
+.tools:hover > .moreInfo{
+    visibility: visible;
+    transform: scale(.7, .9)
+}
+.tools:hover > .mainInfoContainer, .tools:hover > .moreInfoButtonContainer{
+    visibility: hidden;
+}
+
+
+.code:hover > .moreInfo{
+    visibility: visible;
+    transform: scale(.7, .9)
+}
+.code:hover > .mainInfoContainer, .code:hover > .moreInfoButtonContainer{
+    visibility: hidden;
+}
+
+
+.design:hover > .moreInfo{
+    visibility: visible;
+    transform: scale(.7, .9)
+}
+.design:hover > .mainInfoContainer, .design:hover > .moreInfoButtonContainer{
+    visibility: hidden;
+}
+.fileIconSkills{
+    font-size: 23px;
+    color: #3e98c7;
+    z-index: 0;
+}
+/* @media screen and (max-width: 600px) {
+    body {
+      background-color: olive;
+    }
+  } */

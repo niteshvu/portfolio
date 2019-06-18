@@ -1,0 +1,15 @@
+.navItem{
+    color: rgb(109, 109, 109);
+    text-decoration: none;
+    font-size: 17px;
+    padding-left: 10px; 
+}
+.navItem:hover{
+    text-decoration: none;
+    color: #3e98c7;  
+}
+.activeClass{
+    color: #3e98c7;    
+    border-left: 3px solid #3e98c7;   
+}
+

@@ -1,0 +1,48 @@
+.aboutContainer{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+    padding: 30px 60px;
+    overflow-y: auto;
+}
+.aboutListContainer{
+    list-style-type: none;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+.listItemContainer{
+    /* border: 1px solid black; */
+    width: 33.33%;
+    padding: 10px;
+    cursor: pointer;
+}
+.activeTab{
+    border-bottom: 2px solid #3e98c7; 
+}
+.inActiveTab{
+    border-bottom: 2px solid #dbdbdb; 
+}
+.activeContentContainer{
+    width: 100%;
+    height: 100%;
+    /* background-color: gray; */
+    overflow-y: auto;
+}
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(197, 197, 197); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

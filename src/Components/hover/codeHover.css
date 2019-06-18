@@ -1,0 +1,14 @@
+.fileIconCodeHover{
+    color: gray;
+}
+.codeHoverContainer{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.progressBarContainer{
+    width: 80%;
+}
+.progressBarContainer > *{
+    margin: 10px;
+}

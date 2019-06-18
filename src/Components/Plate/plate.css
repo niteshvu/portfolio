@@ -1,0 +1,13 @@
+.plateContainer{
+    display: flex;
+    position: fixed;
+    width: 90%;
+    height: 640px;
+    background-color: white;
+    border-radius: 2px;
+    flex-direction: row;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+    /* overflow-y: auto;
+    overflow-x: hidden; */
+}
